@@ -1,0 +1,30 @@
+.todo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2em;
+	background-color: var(--main-blue);
+	text-align: center;
+	width: 100%;
+	min-height: 100vh;
+	[type='checkbox'] {
+		width: 1.5em;
+		height: 1.5em;
+	}
+}
+.checkbox-filters {
+	display: flex;
+	margin-bottom: 0.5em;
+}
+.todo-items-container {
+	width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+	.checkbox-filters {
+		flex-direction: column;
+		justify-content: center;
+		align-self: flex-start;
+		align-items: flex-start;
+	}
+}

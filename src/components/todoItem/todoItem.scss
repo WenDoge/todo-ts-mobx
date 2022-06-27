@@ -1,0 +1,41 @@
+.todo-item {
+	display: flex;
+	padding: 1em 2em;
+	background-color: #fff;
+	margin: 0 auto;
+	border-radius: 1em;
+	margin-bottom: 1em;
+	max-width: 1000px;
+	justify-content: space-between;
+	align-items: center;
+	input {
+		margin-right: 1em;
+	}
+	span {
+		width: 80%;
+		text-align: start;
+		padding: 0 0.3em;
+	}
+	.todo-item__delete {
+		padding: 0;
+		background-color: var(--delete);
+		border: none;
+		border-radius: 0.25em;
+		width: 1.5em;
+		height: 1.5em;
+		align-self: flex-start;
+		&:hover {
+			background-color: var(--delete-hover);
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.todo-item {
+		padding: 1em 1em;
+		.todo-item__delete {
+			width: 2em;
+			height: 2em;
+		}
+	}
+}
